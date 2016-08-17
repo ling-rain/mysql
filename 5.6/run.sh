@@ -30,7 +30,7 @@ StartMySQL ()
 
 CreateMySQLUser()
 {
-    if [ "$MYSQL_PASS" = "**Random**" ]; then
+    if [ "$MYSQL_PASS" = "Random" ]; then
         unset MYSQL_PASS
     fi
 
@@ -53,7 +53,7 @@ CreateMySQLUser()
 
 OnCreateDB()
 {
-    if [ "$ON_CREATE_DB" = "**False**" ]; then
+    if [ "$ON_CREATE_DB" = "False" ]; then
         unset ON_CREATE_DB
     else
         echo "Creating MySQL database ${ON_CREATE_DB}"
@@ -75,11 +75,11 @@ ImportSql()
 }
 
 # Main
-if [ ${REPLICATION_MASTER} == "**False**" ]; then
+if [ ${REPLICATION_MASTER} == "False" ]; then
     unset REPLICATION_MASTER
 fi
 
-if [ ${REPLICATION_SLAVE} == "**False**" ]; then
+if [ ${REPLICATION_SLAVE} == "False" ]; then
     unset REPLICATION_SLAVE
 fi
 
