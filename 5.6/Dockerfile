@@ -18,10 +18,10 @@ COPY /5.6/import_sql.sh /import_sql.sh
 COPY /5.6/run.sh /run.sh
 
 ENV MYSQL_USER=admin \
-    MYSQL_PASS=adminpass \
-    ON_CREATE_DB=False \
-    REPLICATION_MASTER=False \
-    REPLICATION_SLAVE=False \
+    MYSQL_PASS=**Random** \
+    ON_CREATE_DB=**False** \
+    REPLICATION_MASTER=**False** \
+    REPLICATION_SLAVE=**False** \
     REPLICATION_USER=replica \
     REPLICATION_PASS=replica
 
