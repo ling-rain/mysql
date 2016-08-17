@@ -19,7 +19,7 @@ COPY /5.6/run.sh /run.sh
 
 ENV MYSQL_USER=admin \
     MYSQL_PASS=Random \
-    ON_CREATE_DB=False \
+    ON_NEW_DB=False \
     REPLICATION_MASTER=False \
     REPLICATION_SLAVE=False \
     REPLICATION_USER=replica \
